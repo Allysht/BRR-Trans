@@ -820,7 +820,7 @@ a:focus {
 .phone {
   width: 50px;
   height: 50px;
-  background-color: #101010;
+  background-color: #FE331D;
   position: fixed;
   top: 150px;
   display: flex;
@@ -828,12 +828,28 @@ a:focus {
   justify-content: center;
   cursor: pointer;
   z-index: 100;
+  opacity: 0.9;
   display: none;
+}
+
+.phone-display {
+  background: #FE331D;
+  text-align: center;
+  display: none;
+}
+
+.phone-display span {
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
 }
 
 @media screen and (max-width: 992px) {
   .phone {
     display: flex;
+  }
+
+  .phone-display {
+    display: block;
   }
 }
 
